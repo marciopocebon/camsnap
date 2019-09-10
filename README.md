@@ -27,7 +27,7 @@
     <img src="https://img.shields.io/badge/language-shell-green.svg">
  </a>
   <a href="https://github.com/entynetproject/camsnap">
-      <img src="https://img.shields.io/badge/tool-OSINT-red.svg?maxAge=2592000">
+      <img src="https://img.shields.io/badge/portfwd-serveo/ngrok-red.svg?maxAge=2592000">
   </a>
   <a href="https://github.com/entynetproject/camsnap/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/camsnap.svg">
