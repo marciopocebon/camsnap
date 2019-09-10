@@ -42,8 +42,8 @@
 
 # About camera snapshot
 
-    INFO: CamSnap is an OSINT analysis and research 
-    tool, which allows people to take camera snapshots 
+    INFO: Camera Snapshot (CamSnap) is an OSINT analysis and 
+    research tool, which allows people to take camera snapshots 
     in real-time remotely using generated malicious link. 
 
 # How to install CamSnap
