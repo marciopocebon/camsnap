@@ -1,0 +1,89 @@
+#! /bin/bash
+
+# 
+#            --------------------------------------------------
+#                        Camera Snapshot (CamSnap)                
+#            --------------------------------------------------
+#          Copyright (C) <2019>  <Entynetproject (Ivan Nikolsky)>
+#
+#        This program is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        any later version.
+#
+#        This program is distributed in the hope that it will be useful,
+#        but WITHOUT ANY WARRANTY; without even the implied warranty of
+#        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#        GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#
+#    About Author :   
+#    Founder   : Entynetproject (Ivan Nikolsky)
+#    Site      : http://entynetproject.simplesite.com/
+#    Instagram : @entynetproject 
+#    Twitter   : @entynetproject
+#    Email     : entynetproject@gmail.com
+#
+
+#blue start 
+	BS="-e \033[1;34m"
+	BSA="\033[1;34m"
+#color end
+	CE="\033[0m"
+#red start
+	RS="-e \033[31m"
+#green start
+	GNS="-e \033[1;32m"
+	GSA="\033[1;32m"
+#white start
+        WHS="\033[0;97m"
+	
+printf '\033]2;Camera Snapshot\a'
+
+if [[ "$1" = "-u" || "$1" = "--update" ]]
+then
+sleep 1
+echo ""$GNS"["$CE"+"$GSA"] Installing update..."$CE""
+{
+rm -r ~/camsnap
+rm /bin/camsnap
+rm /usr/local/bin/camsnap
+cd ~
+git clone https://github.com/entynetproject/camsnap.git
+cd camsnap
+chmod +x install.sh
+./install.sh
+} &> /dev/null
+echo ""$GNS"["$CE"+"$GSA"] Successfully updated..."$CE""
+sleep 1
+exit
+fi
+
+cd ~
+if [[ -d ~/camsnap ]]
+then
+{
+cd ~/camsnap
+} &> /dev/null
+bash camsnap.sh
+else
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" != "" ]]
+then 
+cd ~
+{
+git clone https://github.com/entynetproject/camsnap.git
+cd ~/camsnap
+} &> /dev/null
+bash camsnap.sh
+else
+cd ~
+sleep 1
+exit
+fi
+fi
