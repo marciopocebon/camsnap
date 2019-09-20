@@ -57,6 +57,14 @@
 
 > ./install.sh
 
+# How to uninstall CamSnap 
+
+> cd camsnap
+
+> chmod +x uninstall.sh
+
+> ./uninstall.sh
+
 # How to execute CamSnap
 
     INFO: To execute CamSnap you should to 
