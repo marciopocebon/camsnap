@@ -23,7 +23,7 @@
   <a href="https://github.com/entynetproject/camsnap/releases">
     <img src="https://img.shields.io/github/release/entynetproject/camsnap.svg">
   </a>
-  <a href="https://ru.m.wikipedia.org/wiki/%D0%A1%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8">
+  <a href="https://wikipedia.org/wiki/Shell_script">
     <img src="https://img.shields.io/badge/language-shell-green.svg">
  </a>
   <a href="https://github.com/entynetproject/camsnap">
@@ -35,7 +35,7 @@
   <a href="https://github.com/entynetproject/camsnap/wiki">
       <img src="https://img.shields.io/badge/wiki%20-camsnap-lightgrey.svg">
  </a>
-<a href="https://mobile.twitter.com/entynetproject">
+<a href="https://twitter.com/entynetproject">
     <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
  </a>
 </p>
