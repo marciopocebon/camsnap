@@ -48,6 +48,8 @@ then
 sleep 1
 echo ""$GNS"["$CE"+"$GSA"] Installing update..."$CE""
 {
+mkdir ~/.camsnap
+cp -r ~/camsnap/images ~/.camsnap
 rm -r ~/camsnap
 rm /bin/camsnap
 rm /usr/local/bin/camsnap
@@ -56,6 +58,8 @@ git clone https://github.com/entynetproject/camsnap.git
 cd camsnap
 chmod +x install.sh
 ./install.sh
+cp -r ~/.camsnap/images ~/camsnap
+rm -r ~/.camsnap
 } &> /dev/null
 echo ""$GNS"["$CE"+"$GSA"] Successfully updated..."$CE""
 sleep 1
