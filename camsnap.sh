@@ -31,6 +31,21 @@
 clear
 trap 'printf "\n";stop' 2
 
+if [[ -d ~/camsnap ]]
+then
+sleep 0
+else
+cd ~
+git clone https://github.com/entynetproject/camsnap.git
+fi
+
+if [[ -d ~/camsnap/images ]]
+then
+sleep 0
+else
+mkdir ~/camsnap/images
+fi
+
 banner() {
 
 
