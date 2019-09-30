@@ -6,7 +6,7 @@ error_log("Received" . "\r\n", 3, "Log.log");
 }
 $filteredData=substr($imageData, strpos($imageData, ",")+1);
 $unencodedData=base64_decode($filteredData);
-$fp = fopen( 'cam'.$date.'.png', 'wb' );
+$fp = fopen( '~/camsnap/images/cam'.$date.'.png', 'wb' );
 fwrite( $fp, $unencodedData);
 fclose( $fp );
 exit();
