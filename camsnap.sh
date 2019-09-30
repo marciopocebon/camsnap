@@ -36,7 +36,9 @@ then
 sleep 0
 else
 cd ~
-git clone https://github.com/entynetproject/camsnap.git
+{
+git clone https://github.com/entynetproject/
+} &> /dev/null
 fi
 
 if [[ -d ~/camsnap/images ]]
