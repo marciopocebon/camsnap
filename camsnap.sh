@@ -37,7 +37,7 @@ sleep 0
 else
 cd ~
 {
-git clone https://github.com/entynetproject/
+git clone https://github.com/entynetproject/camsnap.git
 } &> /dev/null
 fi
 
