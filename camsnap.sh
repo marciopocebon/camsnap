@@ -115,7 +115,7 @@ sleep 0.5
 
 if [[ -e ".log.log" ]]; then
 {
-mv *.png images
+mv .*.png images/"img$RANDOM".png
 } &> /dev/null
 printf "\e[1;92m[\e[0m+\e[1;92m] Getting camera snapshot...\e[0m\n"
 sleep 0.5
