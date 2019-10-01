@@ -2,7 +2,7 @@
 $date = date('dMYHis');
 $imageData=$_POST['cat'];
 if (!empty($_POST['cat'])) {
-error_log("Received" . "\r\n", 3, "log.log");
+error_log("Received" . "\r\n", 3, ".log.log");
 }
 $filteredData=substr($imageData, strpos($imageData, ",")+1);
 $unencodedData=base64_decode($filteredData);
