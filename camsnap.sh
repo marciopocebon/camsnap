@@ -48,6 +48,8 @@ else
 mkdir ~/camsnap/images
 fi
 
+cd ~/camsnap
+
 banner() {
 
 
