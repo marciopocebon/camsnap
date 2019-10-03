@@ -48,7 +48,7 @@ printf "\e[1;92m | |   / _\` | '_ \` _ \\\\\e[0m\e[1;77m\___ \| '_ \ / _\` | '_ 
 printf "\e[1;92m | |__| (_| | | | | | |\e[0m\e[1;77m___) | | | | (_| | |_) |\e[0m\n"
 printf "\e[1;92m  \____\__,_|_| |_| |_|\e[0m\e[1;77m____/|_| |_|\__,_| .__/ \e[0m\n"
 printf "\e[1;92m                       \e[0m\e[1;77m                 |_|    \e[0m\n"
-printf "\e[1;77m     Developed by Entynetproject                \e[0m\n"
+printf "\e[1;77m          Developed by Entynetproject                \e[0m\n"
 
 }
 
