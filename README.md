@@ -67,13 +67,18 @@
 
 # How to execute CamSnap
 
-    INFO: To execute CamSnap you should to 
-    have php, openssh and wget installed!
+    INFO: To execute CamSnap you should to have 
+    php, openssh, unzip and wget installed!
 
 > camsnap
 
-    INFO: If some dependencies will not 
-    be installed, CamSnap will not work!
+# How to update CamSnap
+
+    INFO: If you update CamSnap, all 
+    data will be saved. Do not worry!
+
+> camsnap -u
+
 
 # Terms of use
 
