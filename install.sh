@@ -2,7 +2,7 @@
 
 # 
 #            --------------------------------------------------
-#                        Camera Snapshot (CamSnap)              
+#                          Social Fisher (camsnap)                
 #            --------------------------------------------------
 #          Copyright (C) <2019>  <Entynetproject (Ivan Nikolsky)>
 #
@@ -40,21 +40,273 @@ fi
 
 if [[ -d ~/camsnap ]]
 then
-cd ~/camsnap
+cd ~/camsnap/bin
 {
-cp bin/camsnap /usr/local/bin
-chmod +x /usr/local/bin/camsnap
-cp bin/camsnap /bin
+cp camsnap /bin
+cp camsnap /usr/local/bin
 chmod +x /bin/camsnap
+chmod +x /usr/local/bin/camsnap
+cd ~/camsnap
 } &> /dev/null
+sleep 0.5
+echo
+printf "\e[1;92m  ____            \e[0m\e[1;77m _____ _     _     \e[0m\n"
+printf "\e[1;92m / ___|  ___   ___\e[0m\e[1;77m|  ___(_)___| |__  \e[0m\n"
+printf "\e[1;92m \___ \ / _ \ / __|\e[0m\e[1;77m |_  | / __| '_ \ \e[0m\n"
+printf "\e[1;92m  ___) | (_) | (__\e[0m\e[1;77m|  _| | \__ \ | | |\e[0m\n"
+printf "\e[1;92m |____/ \___/ \___|\e[0m\e[1;77m_|   |_|___/_| |_|\e[0m\n"
+printf "\e[1;92m                       \e[0m\e[1;77m                 \e[0m\n"
+printf "\e[1;77m     Developed by Entynetproject                \e[0m\n"
+printf "\e[1;77m           (\e[0m\e[1;92mIvan Nikolsky\e[0m\e[1;77m)                \e[0m\n"
+echo
+
+if [[ -f /etc/camsnap.conf ]]
+then
+
+CONF="$( cat /etc/camsnap.conf )"
+sleep 1
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else 
+echo ""$BS"Installing dependencies..."$CE""
+pkg update
+pkg install curl
+pkg install php
+pkg install openssh
+pkg install unzip
+pkg install wget
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+
+else
+read -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Select your architecture (amd/intel/arm): \e[0m' CONF
+if [[ "$CONF" = "" ]]
+then
+exit
+else
+echo "$CONF" >> /etc/camsnap.conf
+fi
+sleep 1
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else 
+echo ""$BS"Installing dependencies..."$CE""
+pkg update
+pkg install curl
+pkg install php
+pkg install openssh
+pkg install unzip
+pkg install wget
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+fi
+
 else
 cd ~
 {
 git clone https://github.com/entynetproject/camsnap.git
-cd  ~/camsnap
-cp bin/camsnap /usr/local/bin
-chmod +x /usr/local/bin/camsnap
-cp bin/camsnap /bin
+cd ~/camsnap/bin
+cp camsnap /bin
+cp camsnap /usr/local/bin
 chmod +x /bin/camsnap
+chmod +x /usr/local/bin/camsnap
+cd ~/camsnap
 } &> /dev/null
+sleep 0.5
+echo
+printf "\e[1;92m  ____            \e[0m\e[1;77m _____ _     _     \e[0m\n"
+printf "\e[1;92m / ___|  ___   ___\e[0m\e[1;77m|  ___(_)___| |__  \e[0m\n"
+printf "\e[1;92m \___ \ / _ \ / __|\e[0m\e[1;77m |_  | / __| '_ \ \e[0m\n"
+printf "\e[1;92m  ___) | (_) | (__\e[0m\e[1;77m|  _| | \__ \ | | |\e[0m\n"
+printf "\e[1;92m |____/ \___/ \___|\e[0m\e[1;77m_|   |_|___/_| |_|\e[0m\n"
+printf "\e[1;92m                       \e[0m\e[1;77m                 \e[0m\n"
+printf "\e[1;77m     Developed by Entynetproject                \e[0m\n"
+printf "\e[1;77m           (\e[0m\e[1;92mIvan Nikolsky\e[0m\e[1;77m)                \e[0m\n"
+echo
+
+if [[ -f /etc/camsnap.conf ]]
+then
+
+CONF="$( cat /etc/camsnap.conf )"
+sleep 1
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else 
+echo ""$BS"Installing dependencies..."$CE""
+pkg update
+pkg install curl
+pkg install php
+pkg install openssh
+pkg install unzip
+pkg install wget
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+
+else
+
+read -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Select your architecture (amd/intel/arm): \e[0m' CONF
+if [[ "$CONF" = "" ]]
+then
+exit
+else
+echo "$CONF" >> /etc/camsnap.conf
+fi
+sleep 1
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else 
+echo ""$BS"Installing dependencies..."$CE""
+pkg update
+pkg install curl
+pkg install php
+pkg install openssh
+pkg install unzip
+pkg install wget
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependencies..."$CE""
+else
+echo ""$BS"Installing dependencies..."$CE""
+apt-get update
+apt-get install curl
+apt-get install php
+apt-get install openssh
+apt-get install unzip
+apt-get install wget
+fi
+fi
+fi
 fi
