@@ -30,7 +30,7 @@
 
 RS="\033[1;31m"
 YS="\033[1;33m"
-BS="-e \033[34m"
+WS="-e \033[1;77m"
 CE="\033[0m"
 
 if [[ $EUID -ne 0 ]]
@@ -71,9 +71,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 pkg update
 pkg install curl
 pkg install php
@@ -87,9 +87,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -103,9 +103,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -129,9 +129,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 pkg update
 pkg install curl
 pkg install php
@@ -145,9 +145,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -161,9 +161,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -207,9 +207,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 pkg update
 pkg install curl
 pkg install php
@@ -223,9 +223,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -239,9 +239,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -266,9 +266,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 pkg update
 pkg install curl
 pkg install php
@@ -282,9 +282,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
@@ -298,9 +298,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependencies..."$CE""
+echo ""$WS"Installing dependencies..."$CE""
 apt-get update
 apt-get install curl
 apt-get install php
