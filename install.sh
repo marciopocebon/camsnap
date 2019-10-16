@@ -119,6 +119,7 @@ read -e -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Select your architecture (amd
 if [[ "$CONF" = "" ]]
 then
 exit
+else
 if [[ "$CONF" = "arm" ]]
 then
 read -e -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Is this a single board computer (yes/no)? \e[0m' PI
@@ -265,6 +266,7 @@ read -e -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Select your architecture (amd
 if [[ "$CONF" = "" ]]
 then
 exit
+else
 if [[ "$CONF" = "arm" ]]
 then
 read -e -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Is this a single board computer (yes/no)? \e[0m' PI
