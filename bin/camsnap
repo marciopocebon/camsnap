@@ -45,6 +45,13 @@ printf '\033]2;Camera Snapshot\a'
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
+if [[ $EUID -ne 0 ]]
+then
+sleep 1
+echo ""$RS"["$CE"-"$RSA"] Permission denied!"$CE""
+sleep 1
+exit
+fi
 sleep 1
 echo ""$GNS"["$CE"+"$GSA"] Installing update..."$CE""
 {
