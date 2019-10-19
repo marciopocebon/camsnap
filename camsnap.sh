@@ -76,7 +76,7 @@ exit 1
 dependencies() {
 
 
-command -v php > /dev/null 2>&1 || { echo -e "\n\e[1;31m[\e[0m-\e[1;31m] Error, php is not installed! Aborting...\e[0m"; exit; }
+command -v php > /dev/null 2>&1 || { echo -e "\n\e[1;31m[\e[0m-\e[1;31m] Error, php is not installed!\e[0m"; exit; }
  
 
 
@@ -126,7 +126,7 @@ done
 
 server() {
 
-command -v ssh > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, openssh is not installed! Aborting...\e[0m"; exit; }
+command -v ssh > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, openssh is not installed!\e[0m"; exit; }
 
 printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Starting Serveo...\e[0m\n"
 
@@ -169,8 +169,8 @@ ngrok_server() {
 if [[ -e ngrok ]]; then
 echo ""
 else
-command -v unzip > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, unzip is not installed! Aborting...\e[0m"; exit; }
-command -v wget > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, wget is not installed! Aborting...\e[0m"; exit; }
+command -v unzip > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, unzip is not installed!\e[0m"; exit; }
+command -v wget > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, wget is not installed!\e[0m"; exit; }
 printf "\e[1;92m[\e[0m+\e[1;92m] Downloading Ngrok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
@@ -225,7 +225,7 @@ read -e -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose portfwd service: \e[
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
-command -v php > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, php is not installed! Aborting...\e[0m"; exit; }
+command -v php > /dev/null 2>&1 || { echo -e "\e[1;31m[\e[0m-\e[1;31m] Error, php is not installed!\e[0m"; exit; }
 start
 
 elif [[ $option_server -eq 2 ]]; then
