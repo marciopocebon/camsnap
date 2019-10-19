@@ -38,6 +38,7 @@
 #green start
 	GNS="-e \033[1;92m"
 	GSA="\033[1;92m"
+	RSA="\033[1;31m"
 #white start
         WHS="\033[0;97m"
 	
