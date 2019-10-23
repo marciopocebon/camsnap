@@ -83,7 +83,7 @@ cd ~/camsnap
 bash camsnap.sh
 else
 {
-ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 } &> /dev/null
 if [[ "$ASESR" != "" ]]
 then 
