@@ -51,6 +51,8 @@ chmod +x /usr/local/bin/camsnap
 cd ~/camsnap
 } &> /dev/null
 sleep 0.5
+clear
+sleep 0.5
 echo
 printf "\e[1;92m   ____               \e[0m\e[1;77m ____                    \e[0m\n"
 printf "\e[1;92m  / ___|__ _ _ __ ___ \e[0m\e[1;77m/ ___| _ __   __ _ _ __  \e[0m\n"
@@ -196,6 +198,8 @@ chmod +x /bin/camsnap
 chmod +x /usr/local/bin/camsnap
 cd ~/camsnap
 } &> /dev/null
+sleep 0.5
+clear
 sleep 0.5
 echo
 printf "\e[1;92m   ____               \e[0m\e[1;77m ____                    \e[0m\n"
