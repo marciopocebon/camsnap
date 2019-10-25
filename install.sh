@@ -48,6 +48,8 @@ cp camsnap /bin
 cp camsnap /usr/local/bin
 chmod +x /bin/camsnap
 chmod +x /usr/local/bin/camsnap
+cp camsnap /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/camsnap
 cd ~/camsnap
 } &> /dev/null
 sleep 0.5
@@ -196,6 +198,8 @@ cp camsnap /bin
 cp camsnap /usr/local/bin
 chmod +x /bin/camsnap
 chmod +x /usr/local/bin/camsnap
+cp camsnap /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/camsnap
 cd ~/camsnap
 } &> /dev/null
 sleep 0.5
