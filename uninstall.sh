@@ -43,5 +43,6 @@ fi
 {
 rm /bin/camsnap
 rm /usr/local/bin/camsnap
-rm -r ~/camsnap
+rm -rf ~/camsnap
+rm /data/data/com.termux/files/usr/bin/camsnap
 } &> /dev/null
