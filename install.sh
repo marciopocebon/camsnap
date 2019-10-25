@@ -78,11 +78,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else 
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 pkg update
-pkg install curl
-pkg install php
-pkg install openssh
-pkg install unzip
-pkg install wget
+pkg -y install curl
+pkg -y install php
+pkg -y install openssh
+pkg -y install unzip
+pkg -y install wget
 fi
 fi
 
@@ -94,11 +94,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 
@@ -110,11 +110,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 
@@ -146,11 +146,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else 
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 pkg update
-pkg install curl
-pkg install php
-pkg install openssh
-pkg install unzip
-pkg install wget
+pkg -y install curl
+pkg -y install php
+pkg -y install openssh
+pkg -y install unzip
+pkg -y install wget
 fi
 fi
 
@@ -162,11 +162,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 
@@ -178,11 +178,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 fi
@@ -226,11 +226,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else 
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 pkg update
-pkg install curl
-pkg install php
-pkg install openssh
-pkg install unzip
-pkg install wget
+pkg -y install curl
+pkg -y install php
+pkg -y install openssh
+pkg -y install unzip
+pkg -y install wget
 fi
 fi
 
@@ -242,11 +242,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 
@@ -258,11 +258,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 
@@ -295,11 +295,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else 
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 pkg update
-pkg install curl
-pkg install php
-pkg install openssh
-pkg install unzip
-pkg install wget
+pkg -y install curl
+pkg -y install php
+pkg -y install openssh
+pkg -y install unzip
+pkg -y install wget
 fi
 fi
 
@@ -311,11 +311,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 
@@ -327,11 +327,11 @@ echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 else
 echo -e "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Installing dependencies...\e[0m"
 apt-get update
-apt-get install curl
-apt-get install php
-apt-get install openssh
-apt-get install unzip
-apt-get install wget
+apt-get -y install curl
+apt-get -y install php
+apt-get -y install openssh
+apt-get -y install unzip
+apt-get -y install wget
 fi
 fi
 fi
