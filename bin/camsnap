@@ -46,6 +46,16 @@ printf '\033]2;Camera Snapshot\a'
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
+{
+ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" != "" ]]
+then 
+sleep 1
+echo ""$RS"["$CE"-"$RSA"] Download failed!"$CE""
+sleep 1
+exit
+fi
 if [[ $EUID -ne 0 ]]
 then
 sleep 1
@@ -70,7 +80,7 @@ chmod +x install.sh
 cp -r ~/.camsnap/images ~/camsnap
 rm -rf ~/.camsnap
 } &> /dev/null
-echo ""$GNS"["$CE"+"$GSA"] Successfully updated..."$CE""
+echo ""$GNS"["$CE"+"$GSA"] Successfully updated!"$CE""
 sleep 1
 exit
 fi
