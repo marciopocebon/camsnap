@@ -63,9 +63,8 @@
 
 # How to execute CamSnap
 
-    INFO: To execute CamSnap you should to have 
-    php, openssh, unzip and wget installed!
-
+    INFO: To execute Camera Snapshot you 
+    should execute the following command!
 > camsnap
 
 # How to update CamSnap
