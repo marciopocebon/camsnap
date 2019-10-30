@@ -259,7 +259,7 @@ read -e -p $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e
 choose_sub="${choose_sub:-${default_choose_sub}}"
 if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choose_sub == "yes" ]]; then
 subdomain_resp=true
-read -e -p $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m %s\e[0m\e[1;33m): \e[0m' subdomain
+read -e -p $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m $default_subdomain\e[0m\e[1;33m): \e[0m' subdomain
 subdomain="${subdomain:-${default_subdomain}}"
 fi
 
