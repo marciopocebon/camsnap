@@ -136,6 +136,8 @@ CONF="amd"
 else
 echo "$CONF" >> /etc/camsnap.conf
 fi
+else
+echo "$CONF" >> /etc/camsnap.conf
 fi
 fi
 sleep 1
@@ -287,6 +289,8 @@ CONF="amd"
 else
 echo "$CONF" >> /etc/camsnap.conf
 fi
+else
+echo "$CONF" >> /etc/camsnap.conf
 fi
 fi
 sleep 1
