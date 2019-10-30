@@ -44,5 +44,6 @@ fi
 rm /bin/camsnap
 rm /usr/local/bin/camsnap
 rm -rf ~/camsnap
+rm /etc/camsnap.conf
 rm /data/data/com.termux/files/usr/bin/camsnap
 } &> /dev/null
