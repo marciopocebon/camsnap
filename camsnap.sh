@@ -264,7 +264,7 @@ printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m 
 read -e subdomain
 if [[ $subdomain = "" ]]
 then
-printf ''
+printf '\n'
 fi
 subdomain="${subdomain:-${default_subdomain}}"
 fi
