@@ -222,10 +222,6 @@ printf "\e[1;92m[\e[0m\e[1;77m1\e[0m\e[1;92m]\e[0m\e[1;93m Serveo\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m2\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
 default_option_server="1"
 read -e -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose portfwd service: \e[0m' option_server
-if [[ $option_server = "" ]]
-then
-printf '\n'
-fi
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
@@ -259,21 +255,11 @@ start() {
 default_choose_sub="Y"
 default_subdomain="camsnap$RANDOM"
 
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n]\e[0m\e[1;33m): \e[0m'
-read -e choose_sub
-if [[ $choose_sub = "" ]]
-then
-printf '\n'
-fi
+read -e -p $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n]\e[0m\e[1;33m): \e[0m' choose_sub
 choose_sub="${choose_sub:-${default_choose_sub}}"
 if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choose_sub == "yes" ]]; then
 subdomain_resp=true
-printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m %s\e[0m\e[1;33m): \e[0m' $default_subdomain
-read -e subdomain
-if [[ $subdomain = "" ]]
-then
-printf '\n'
-fi
+read -e -p $'\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m %s\e[0m\e[1;33m): \e[0m' subdomain
 subdomain="${subdomain:-${default_subdomain}}"
 fi
 
