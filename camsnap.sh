@@ -262,6 +262,10 @@ if [[ $choose_sub == "Y" || $choose_sub == "y" || $choose_sub == "Yes" || $choos
 subdomain_resp=true
 printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Subdomain: (Default:\e[0m\e[1;77m %s\e[0m\e[1;33m): \e[0m' $default_subdomain
 read -e subdomain
+if [[ $subdomain = "" ]]
+then
+printf ''
+fi
 subdomain="${subdomain:-${default_subdomain}}"
 fi
 
