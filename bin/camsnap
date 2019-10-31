@@ -28,6 +28,8 @@
 #    Email     : entynetproject@gmail.com
 #
 
+true
+
 #blue start 
 	BS="-e \033[1;34m"
 	BSA="\033[1;34m"
