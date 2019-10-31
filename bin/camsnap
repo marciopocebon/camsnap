@@ -46,6 +46,22 @@ printf '\033]2;Camera Snapshot\a'
 
 if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
+if [[ -d /data/data/com.termux ]]
+then
+if [[ -f /data/data/com.termux/files/usr/bin/camsnap ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+else
+if [[ -f /usr/local/bin/camsnap ]]
+then
+UPD="true"
+else
+UPD="false"
+fi
+fi
 {
 ASESR="$( curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 } &> /dev/null
@@ -74,9 +90,14 @@ rm /usr/local/bin/camsnap
 rm /data/data/com.termux/files/usr/bin/camsnap
 cd ~
 git clone https://github.com/entynetproject/camsnap.git
+if [[ "$UPD" != "true" ]]
+then
+sleep 0
+else
 cd camsnap
 chmod +x install.sh
 ./install.sh
+fi
 cp -r ~/.camsnap/images ~/camsnap
 rm -rf ~/.camsnap
 } &> /dev/null
