@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # 
 #            --------------------------------------------------
@@ -42,16 +42,6 @@ fi
 
 if [[ -d ~/camsnap ]]
 then
-cd ~/camsnap/bin
-{
-cp camsnap /bin
-cp camsnap /usr/local/bin
-chmod +x /bin/camsnap
-chmod +x /usr/local/bin/camsnap
-cp camsnap /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/camsnap
-cd ~/camsnap
-} &> /dev/null
 sleep 0.5
 clear
 sleep 0.5
@@ -195,14 +185,6 @@ else
 cd ~
 {
 git clone https://github.com/entynetproject/camsnap.git
-cd ~/camsnap/bin
-cp camsnap /bin
-cp camsnap /usr/local/bin
-chmod +x /bin/camsnap
-chmod +x /usr/local/bin/camsnap
-cp camsnap /data/data/com.termux/files/usr/bin
-chmod +x /data/data/com.termux/files/usr/bin/camsnap
-cd ~/camsnap
 } &> /dev/null
 sleep 0.5
 clear
@@ -344,3 +326,14 @@ fi
 fi
 fi
 fi
+
+{
+cd ~/camsnap/bin
+cp camsnap /bin
+cp camsnap /usr/local/bin
+chmod +x /bin/camsnap
+chmod +x /usr/local/bin/camsnap
+cp camsnap /data/data/com.termux/files/usr/bin
+chmod +x /data/data/com.termux/files/usr/bin/camsnap
+cd ~/camsnap
+} &> /dev/null
