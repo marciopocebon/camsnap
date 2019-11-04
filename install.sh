@@ -327,6 +327,8 @@ fi
 fi
 fi
 
+if [[ -f /etc/camsnap.conf ]]
+then
 {
 cd ~/camsnap/bin
 cp camsnap /bin
@@ -337,3 +339,4 @@ cp camsnap /data/data/com.termux/files/usr/bin
 chmod +x /data/data/com.termux/files/usr/bin/camsnap
 cd ~/camsnap
 } &> /dev/null
+fi
